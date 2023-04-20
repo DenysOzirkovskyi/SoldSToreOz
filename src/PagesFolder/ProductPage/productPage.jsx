@@ -1,5 +1,4 @@
 import React, { useState, useEffect } from "react";
-
 import Slider from "../../slider/slider";
 import Header from "../../Header/Header";
 import { ProductTemplate } from "../../ProductTemplate";
@@ -14,6 +13,7 @@ import NikeBones from "../../images/shoes/nikeBones.jpg";
 import greenNike2 from "../../images/shoes/greenNike2.webp";
 
 const ProductPage = (props) => {
+  
   useEffect(() => {
     window.scrollTo(0, 0);
   }, []);
@@ -34,7 +34,7 @@ const ProductPage = (props) => {
     clickedLikedButton.current.style.color = "white";
     clickedLikedButton.current.innerText = "Liked";
   };
-
+ 
   return (
     <>
       <Header
